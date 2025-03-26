@@ -417,7 +417,7 @@ body {
     width: 100%;
 }
 
-.recipe-info h1 {
+.recipe-info h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--primary-color);
@@ -445,8 +445,8 @@ body {
     margin-bottom: 2rem;
 }
 
-.recipe-ingredients h2,
-.recipe-steps h2 {
+.recipe-ingredients h3,
+.recipe-steps h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--secondary-color);
@@ -483,7 +483,7 @@ body {
     padding: 2rem 0;
 }
 
-.favorites-section h1 {
+.favorites-section h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -508,7 +508,7 @@ body {
     margin: 0 auto;
 }
 
-.about-section h1 {
+.about-section h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     color: var(--primary-color);
@@ -801,7 +801,7 @@ body {
     }
 
     .recipe-image {
-        width: 50%;
+        width: 100%;
         margin-right: 2rem;
         margin-bottom: 0;
     }
@@ -823,5 +823,3 @@ body {
     background-color: #2d2d2d;
     border-color: #555;
 }
-
-

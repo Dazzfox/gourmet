@@ -14,12 +14,18 @@
         <nav class="main-nav">
             <div class="nav-container">
                 <a class="logo" href="index.html">
-                    <img src="assets/icons/logo.png" alt="G" width="30" height="30">
-                    <span>GourmeTech</span>
+                    <img src="assets/icons/Logo.png" alt="G" width="30" height="30">
+                    <h1>GourmeTech</h1>
                 </a>
-                <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu">
-                    <span class="menu-icon"></span>
-                </button>
+                <div class="nav-controls">
+                    <button id="darkModeToggle" class="theme-toggle" aria-label="Changer le thème">
+                        <span aria-hidden="true">🌙</span>
+                        <span class="visually-hidden">Basculer en mode sombre</span>
+                    </button>
+                    <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu">
+                        <span class="menu-icon"></span>
+                    </button>
+                </div>
                 <div class="main-menu" id="main-menu">
                     <ul class="nav-list">
                         <li class="nav-item">
@@ -35,10 +41,6 @@
                             <a class="nav-link" href="a-propos.html">À propos</a>
                         </li>
                     </ul>
-                    <button id="darkModeToggle" class="theme-toggle" aria-label="Changer le thème">
-                        <span aria-hidden="true">🌙</span>
-                        <span class="visually-hidden">Basculer en mode sombre</span>
-                    </button>
                 </div>
             </div>
         </nav>
@@ -158,7 +160,7 @@
 
                 <article class="recipe-item" data-category="entree" data-time="30" data-difficulty="facile">
                     <div class="recipe-card">
-                        <img src="assets/images/velouté.jpeg" class="recipe-image" alt="Velouté">
+                        <img src="assets/images/velouté potiron.jpg" class="recipe-image" alt="Velouté">
                         <button class="favorite-btn" data-recipe-id="3" aria-label="Ajouter aux favoris">❤️</button>
                         <div class="recipe-content">
                             <h3 class="recipe-title">Velouté de potiron</h3>
