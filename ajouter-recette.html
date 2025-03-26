@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GourmeTech - Ajouter une recette</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a class="logo" href="index.html">
+                    <img src="assets/icons/logo.png" alt="G" width="30" height="30">
+                    <span>GourmeTech</span>
+                </a>
+                <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu">
+                    <span class="menu-icon"></span>
+                </button>
+                <div class="main-menu" id="main-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="ajouter-recette.html">Ajouter une recette</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="favoris.html">Mes favoris</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="a-propos.html">À propos</a>
+                        </li>
+                    </ul>
+                    <button id="darkModeToggle" class="theme-toggle" aria-label="Changer le thème">🌙</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section class="add-recipe-section">
+            <h1>Ajouter une recette</h1>
+            <form id="addRecipeForm" class="recipe-form">
+                <div class="form-group">
+                    <label for="recipeName">Nom de la recette</label>
+                    <input type="text" class="form-input" id="recipeName" name="recipeName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="recipeCategory">Catégorie</label>
+                    <select class="form-select" id="recipeCategory" name="recipeCategory" required>
+                        <option value="">Sélectionner une catégorie</option>
+                        <option value="entree">Entrée</option>
+                        <option value="plat">Plat</option>
+                        <option value="dessert">Dessert</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="recipeTime">Temps de préparation (minutes)</label>
+                    <input type="number" class="form-input" id="recipeTime" name="recipeTime" min="5" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="recipeDifficulty">Difficulté</label>
+                    <select class="form-select" id="recipeDifficulty" name="recipeDifficulty" required>
+                        <option value="">Sélectionner une difficulté</option>
+                        <option value="facile">Facile</option>
+                        <option value="moyen">Moyen</option>
+                        <option value="difficile">Difficile</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="recipeServings">Nombre de personnes</label>
+                    <input type="number" class="form-input" id="recipeServings" name="recipeServings" min="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="recipeImage">Image de la recette</label>
+                    <input type="file" class="form-file" id="recipeImage" name="recipeImage" accept="image/*">
+                </div>
+                
+                <div class="form-group">
+                    <label for="recipeIngredients">Ingrédients (un par ligne)</label>
+                    <textarea class="form-textarea" id="recipeIngredients" name="recipeIngredients" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="recipeSteps">Étapes de préparation (une par ligne)</label>
+                    <textarea class="form-textarea" id="recipeSteps" name="recipeSteps" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Ajouter la recette</button>
+                    <button type="reset" class="btn-secondary">Réinitialiser</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title">Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+                    <li><a href="favoris.html">Favoris</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">À propos</h3>
+                <ul class="footer-links">
+                    <li><a href="a-propos.html">Notre équipe</a></li>
+                    <li><a href="a-propos.html#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">GourmeTech</h3>
+                <p class="footer-copyright">
+                    © 2024 GourmeTech - Tous droits réservés<br>
+                    Projet pédagogique - École XYZ
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

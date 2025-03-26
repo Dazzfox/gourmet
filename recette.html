@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GourmeTech - Recette</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a class="logo" href="index.html">
+                    <img src="assets/icons/logo.png" alt="G" width="30" height="30">
+                    <span>GourmeTech</span>
+                </a>
+                <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu">
+                    <span class="menu-icon"></span>
+                </button>
+                <div class="main-menu" id="main-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ajouter-recette.html">Ajouter une recette</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="favoris.html">Mes favoris</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="a-propos.html">À propos</a>
+                        </li>
+                    </ul>
+                    <button id="darkModeToggle" class="theme-toggle" aria-label="Changer le thème">🌙</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section class="recipe-details">
+            <div class="recipe-header">
+                <img src="assets/images/tarte.jpg" alt="Tarte aux pommes" class="recipe-image">
+                <div class="recipe-info">
+                    <h1>Tarte aux pommes</h1>
+                    <div class="recipe-meta">
+                        <span class="badge badge-category">Dessert</span>
+                        <span class="badge badge-time">60 min</span>
+                        <span class="badge badge-difficulty">Facile</span>
+                        <span class="badge badge-servings">4 personnes</span>
+                    </div>
+                    <button class="btn-favorite" aria-label="Ajouter aux favoris">Ajouter aux favoris</button>
+                </div>
+            </div>
+            <div class="recipe-ingredients">
+                <h2>Ingrédients</h2>
+                <ul>
+                    <li>200g de farine</li>
+                    <li>100g de beurre</li>
+                    <li>100g de sucre</li>
+                    <li>4 pommes</li>
+                    <li>1 œuf</li>
+                    <li>1 pincée de sel</li>
+                </ul>
+            </div>
+            <div class="recipe-steps">
+                <h2>Étapes de préparation</h2>
+                <ol>
+                    <li>Préchauffez le four à 180°C.</li>
+                    <li>Mélangez la farine, le beurre, le sucre et l'œuf pour former une pâte.</li>
+                    <li>Étalez la pâte dans un moule à tarte.</li>
+                    <li>Disposez les pommes coupées en tranches sur la pâte.</li>
+                    <li>Saupoudrez de sucre et enfournez pendant 40 minutes.</li>
+                    <li>Laissez refroidir avant de servir.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title">Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+                    <li><a href="favoris.html">Favoris</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">À propos</h3>
+                <ul class="footer-links">
+                    <li><a href="a-propos.html">Notre équipe</a></li>
+                    <li><a href="a-propos.html#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">GourmeTech</h3>
+                <p class="footer-copyright">
+                    © 2024 GourmeTech - Tous droits réservés<br>
+                    Projet pédagogique - École XYZ
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

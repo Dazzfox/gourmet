@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GourmeTech - Accueil</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a class="logo" href="index.html">
+                    <img src="assets/icons/logo.png" alt="G" width="30" height="30">
+                    <span>GourmeTech</span>
+                </a>
+                <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu">
+                    <span class="menu-icon"></span>
+                </button>
+                <div class="main-menu" id="main-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ajouter-recette.html">Ajouter une recette</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="favoris.html">Mes favoris</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="a-propos.html">À propos</a>
+                        </li>
+                    </ul>
+                    <button id="darkModeToggle" class="theme-toggle" aria-label="Changer le thème">
+                        <span aria-hidden="true">🌙</span>
+                        <span class="visually-hidden">Basculer en mode sombre</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section class="filters-section">
+            <div class="search-bar-container">
+                <label for="searchInput" class="visually-hidden">Rechercher une recette</label>
+                <input type="text" id="searchInput" class="search-bar"
+                    placeholder="Rechercher une recette..." aria-label="Rechercher une recette">
+            </div>
+            <div class="search-bar-container">
+                <div class="search-button-container">
+                    <button id="searchButton" class="btn-search">
+                        Rechercher
+                    </button>
+                </div>
+            </div>
+
+            <div class="filters-grid">
+                <div class="filter-group" data-filter-type="categories">
+                    <fieldset>
+                        <legend>
+                            <h2 class="filter-title">Catégorie</h2>
+                        </legend>
+                        <div class="filter-option">
+                            <input class="filter-checkbox" type="checkbox" value="entree" id="filterEntree">
+                            <label class="filter-label" for="filterEntree">Entrée</label>
+                        </div>
+                        <div class="filter-option">
+                            <input class="filter-checkbox" type="checkbox" value="plat" id="filterPlat">
+                            <label class="filter-label" for="filterPlat">Plat</label>
+                        </div>
+                        <div class="filter-option">
+                            <input class="filter-checkbox" type="checkbox" value="dessert" id="filterDessert">
+                            <label class="filter-label" for="filterDessert">Dessert</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="filter-group" data-filter-type="times">
+                    <fieldset>
+                        <legend>
+                            <h2 class="filter-title">Temps de préparation</h2>
+                        </legend>
+                        <div class="filter-option">
+                            <input class="filter-checkbox" type="checkbox" value="30" id="filterRapide">
+                            <label class="filter-label" for="filterRapide">Rapide (&lt; 30 min)</label>
+                        </div>
+                        <div class="filter-option">
+                            <input class="filter-checkbox" type="checkbox" value="60" id="filterMoyen">
+                            <label class="filter-label" for="filterMoyen">Moyen (30-60 min)</label>
+                        </div>
+                        <div class="filter-option">
+                            <input class="filter-checkbox" type="checkbox" value="100" id="filterLong">
+                            <label class="filter-label" for="filterLong">Long (&gt; 60 min)</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="filter-group" data-filter-type="difficulties">
+                    <fieldset>
+                        <legend>
+                            <h2 class="filter-title">Difficulté</h2>
+                        </legend>
+                        <div class="filter-option">
+                            <input class="filter-checkbox" type="checkbox" value="facile" id="filterFacile">
+                            <label class="filter-label" for="filterFacile">Facile</label>
+                        </div>
+                        <div class="filter-option">
+                            <input class="filter-checkbox" type="checkbox" value="moyen" id="filterMoyenDif">
+                            <label class="filter-label" for="filterMoyenDif">Moyen</label>
+                        </div>
+                        <div class="filter-option">
+                            <input class="filter-checkbox" type="checkbox" value="difficile" id="filterDifficile">
+                            <label class="filter-label" for="filterDifficile">Difficile</label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+
+        <section class="recipe-section">
+            <div class="recipe-grid">
+                <article class="recipe-item" data-category="dessert" data-time="60" data-difficulty="facile">
+                    <div class="recipe-card">
+                        <img src="assets/images/tarte.jpg" class="recipe-image" alt="Tarte aux pommes">
+                        <button class="favorite-btn" data-recipe-id="1" aria-label="Ajouter aux favoris">❤️</button>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Tarte aux pommes</h3>
+                            <div class="recipe-meta">
+                                <span class="badge badge-category">Dessert</span>
+                                <span class="badge badge-time">60 min</span>
+                                <span class="badge badge-difficulty">Facile</span>
+                            </div>
+                            <a href="recette.html?id=1" class="btn-primary">Voir la recette</a>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="recipe-item" data-category="plat" data-time="45" data-difficulty="moyen">
+                    <div class="recipe-card">
+                        <img src="assets/images/Rataouille.jpeg" class="recipe-image" alt="Ratatouille">
+                        <button class="favorite-btn" data-recipe-id="2" aria-label="Ajouter aux favoris">❤️</button>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Ratatouille provençale</h3>
+                            <div class="recipe-meta">
+                                <span class="badge badge-category">Plat</span>
+                                <span class="badge badge-time">45 min</span>
+                                <span class="badge badge-difficulty-medium">Moyen</span>
+                            </div>
+                            <a href="recette.html?id=2" class="btn-primary">Voir la recette</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="recipe-item" data-category="entree" data-time="30" data-difficulty="facile">
+                    <div class="recipe-card">
+                        <img src="assets/images/velouté.jpeg" class="recipe-image" alt="Velouté">
+                        <button class="favorite-btn" data-recipe-id="3" aria-label="Ajouter aux favoris">❤️</button>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Velouté de potiron</h3>
+                            <div class="recipe-meta">
+                                <span class="badge badge-category">Entrée</span>
+                                <span class="badge badge-time">30 min</span>
+                                <span class="badge badge-difficulty">Facile</span>
+                            </div>
+                            <a href="recette.html?id=3" class="btn-primary">Voir la recette</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title">Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+                    <li><a href="favoris.html">Favoris</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">À propos</h3>
+                <ul class="footer-links">
+                    <li><a href="a-propos.html">Notre équipe</a></li>
+                    <li><a href="a-propos.html#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">GourmeTech</h3>
+                <p class="footer-copyright">
+                    © 2024 GourmeTech - Tous droits réservés<br>
+                    Projet pédagogique - École XYZ
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

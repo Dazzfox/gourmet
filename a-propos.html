@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GourmeTech - À propos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a class="logo" href="index.html">
+                    <img src="assets/icons/logo.png" alt="G" width="30" height="30">
+                    <span>GourmeTech</span>
+                </a>
+                <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu">
+                    <span class="menu-icon"></span>
+                </button>
+                <div class="main-menu" id="main-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ajouter-recette.html">Ajouter une recette</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="favoris.html">Mes favoris</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="a-propos.html">À propos</a>
+                        </li>
+                    </ul>
+                    <button id="darkModeToggle" class="theme-toggle" aria-label="Changer le thème">🌙</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section class="about-section">
+            <h1>À propos de GourmeTech</h1>
+            <p>GourmeTech est une plateforme de recettes culinaires interactive développée dans le cadre d'un projet pédagogique. Notre mission est de fournir des recettes délicieuses et faciles à réaliser pour tous les amateurs de cuisine.</p>
+        </section>
+        <section class="contact-section">
+            <h2>Contactez-nous</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" class="form-input" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-input" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-textarea" id="message" name="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Envoyer</button>
+            </form>
+        </section>
+        <section class="faq-section" id="faq">
+            <h2>FAQ</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" aria-expanded="true" aria-controls="faq-content-1">
+                            Comment puis-je ajouter une recette?
+                        </button>
+                    </h3>
+                    <div id="faq-content-1" class="accordion-content show">
+                        <div class="accordion-body">
+                            Pour ajouter une recette, cliquez sur le bouton "Ajouter une recette" dans le menu et suivez les instructions.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" aria-expanded="false" aria-controls="faq-content-2">
+                            Comment puis-je supprimer une recette de mes favoris?
+                        </button>
+                    </h3>
+                    <div id="faq-content-2" class="accordion-content">
+                        <div class="accordion-body">
+                            Pour supprimer une recette de vos favoris, allez sur la page "Mes favoris" et cliquez sur le bouton de suppression à côté de la recette.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" aria-expanded="false" aria-controls="faq-content-3">
+                            Puis-je utiliser GourmeTech sur mon mobile?
+                        </button>
+                    </h3>
+                    <div id="faq-content-3" class="accordion-content">
+                        <div class="accordion-body">
+                            Oui, GourmeTech est entièrement responsive et peut être utilisé sur tous les appareils, y compris les mobiles.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title">Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+                    <li><a href="favoris.html">Favoris</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">À propos</h3>
+                <ul class="footer-links">
+                    <li><a href="a-propos.html">Notre équipe</a></li>
+                    <li><a href="a-propos.html#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">GourmeTech</h3>
+                <p class="footer-copyright">
+                    © 2024 GourmeTech - Tous droits réservés<br>
+                    Projet pédagogique - École XYZ
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
