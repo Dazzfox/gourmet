@@ -17,25 +17,31 @@
                     <img src="assets/icons/Logo.png" alt="G" width="30" height="30">
                     <h1>GourmeTech</h1>
                 </a>
-                <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu">
-                    <span class="menu-icon"></span>
-                </button>
+                <div class="nav-controls">
+                    <button id="darkModeToggle" class="theme-toggle" aria-label="Changer le thème">
+                        <span aria-hidden="true">🌙</span>
+                        <span class="visually-hidden">Basculer en mode sombre</span>
+                    </button>
+                    <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false"
+                        aria-controls="main-menu">
+                        <span class="menu-icon"></span>
+                    </button>
+                </div>
                 <div class="main-menu" id="main-menu">
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Accueil</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="ajouter-recette.html">Ajouter une recette</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="favoris.html">Mes favoris</a>
+                            <a class="nav-link" href="favoris.html">Mes favoris</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="a-propos.html">À propos</a>
                         </li>
                     </ul>
-                    <button id="darkModeToggle" class="theme-toggle" aria-label="Changer le thème">🌙</button>
                 </div>
             </div>
         </nav>
@@ -44,7 +50,6 @@
         <section class="favorites-section">
             <h2>Mes Favoris</h2>
             <div id="favorites-list" class="recipe-grid">
-                <!-- Les recettes favorites seront insérées ici par JavaScript -->
             </div>
             <div id="no-favorites" class="no-favorites-message">
                 <p>Aucun favori enregistré.</p>
@@ -80,4 +85,3 @@
 </body>
 
 </html>
-

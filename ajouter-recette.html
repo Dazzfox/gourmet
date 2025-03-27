@@ -17,16 +17,23 @@
                     <img src="assets/icons/Logo.png" alt="G" width="30" height="30">
                     <h1>GourmeTech</h1>
                 </a>
-                <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu">
-                    <span class="menu-icon"></span>
-                </button>
+                <div class="nav-controls">
+                    <button id="darkModeToggle" class="theme-toggle" aria-label="Changer le thème">
+                        <span aria-hidden="true">🌙</span>
+                        <span class="visually-hidden">Basculer en mode sombre</span>
+                    </button>
+                    <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false"
+                        aria-controls="main-menu">
+                        <span class="menu-icon"></span>
+                    </button>
+                </div>
                 <div class="main-menu" id="main-menu">
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Accueil</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="ajouter-recette.html">Ajouter une recette</a>
+                            <a class="nav-link" href="ajouter-recette.html">Ajouter une recette</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="favoris.html">Mes favoris</a>
@@ -35,7 +42,6 @@
                             <a class="nav-link" href="a-propos.html">À propos</a>
                         </li>
                     </ul>
-                    <button id="darkModeToggle" class="theme-toggle" aria-label="Changer le thème">🌙</button>
                 </div>
             </div>
         </nav>
@@ -48,7 +54,7 @@
                     <label for="recipeName">Nom de la recette</label>
                     <input type="text" class="form-input" id="recipeName" name="recipeName" required>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="recipeCategory">Catégorie</label>
                     <select class="form-select" id="recipeCategory" name="recipeCategory" required>
@@ -58,12 +64,12 @@
                         <option value="dessert">Dessert</option>
                     </select>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="recipeTime">Temps de préparation (minutes)</label>
                     <input type="number" class="form-input" id="recipeTime" name="recipeTime" min="5" required>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="recipeDifficulty">Difficulté</label>
                     <select class="form-select" id="recipeDifficulty" name="recipeDifficulty" required>
@@ -73,27 +79,28 @@
                         <option value="difficile">Difficile</option>
                     </select>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="recipeServings">Nombre de personnes</label>
                     <input type="number" class="form-input" id="recipeServings" name="recipeServings" min="1" required>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="recipeImage">Image de la recette</label>
                     <input type="file" class="form-file" id="recipeImage" name="recipeImage" accept="image/*">
                 </div>
-                
+
                 <div class="form-group">
                     <label for="recipeIngredients">Ingrédients (un par ligne)</label>
-                    <textarea class="form-textarea" id="recipeIngredients" name="recipeIngredients" rows="5" required></textarea>
+                    <textarea class="form-textarea" id="recipeIngredients" name="recipeIngredients" rows="5"
+                        required></textarea>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="recipeSteps">Étapes de préparation (une par ligne)</label>
                     <textarea class="form-textarea" id="recipeSteps" name="recipeSteps" rows="5" required></textarea>
                 </div>
-                
+
                 <div class="form-actions">
                     <button type="submit" class="btn-primary">Ajouter la recette</button>
                     <button type="reset" class="btn-secondary">Réinitialiser</button>

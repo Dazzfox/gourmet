@@ -17,13 +17,20 @@
                     <img src="assets/icons/Logo.png" alt="G" width="30" height="30">
                     <h1>GourmeTech</h1>
                 </a>
-                <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-menu">
-                    <span class="menu-icon"></span>
-                </button>
+                <div class="nav-controls">
+                    <button id="darkModeToggle" class="theme-toggle" aria-label="Changer le thème">
+                        <span aria-hidden="true">🌙</span>
+                        <span class="visually-hidden">Basculer en mode sombre</span>
+                    </button>
+                    <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false"
+                        aria-controls="main-menu">
+                        <span class="menu-icon"></span>
+                    </button>
+                </div>
                 <div class="main-menu" id="main-menu">
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Accueil</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="ajouter-recette.html">Ajouter une recette</a>
@@ -32,18 +39,20 @@
                             <a class="nav-link" href="favoris.html">Mes favoris</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="a-propos.html">À propos</a>
+                            <a class="nav-link" href="a-propos.html">À propos</a>
                         </li>
                     </ul>
-                    <button id="darkModeToggle" class="theme-toggle" aria-label="Changer le thème">🌙</button>
                 </div>
             </div>
         </nav>
     </header>
+
     <main class="main-container">
         <section class="about-section">
             <h2>À propos de GourmeTech</h2>
-            <p>GourmeTech est une plateforme de recettes culinaires interactive développée dans le cadre d'un projet pédagogique. Notre mission est de fournir des recettes délicieuses et faciles à réaliser pour tous les amateurs de cuisine.</p>
+            <p>GourmeTech est une plateforme de recettes culinaires interactive développée dans le cadre d'un projet
+                pédagogique. Notre mission est de fournir des recettes délicieuses et faciles à réaliser pour tous les
+                amateurs de cuisine.</p>
         </section>
         <section class="contact-section">
             <h2>Contactez-nous</h2>
@@ -68,37 +77,43 @@
             <div class="accordion">
                 <div class="accordion-item">
                     <h3 class="accordion-header">
-                        <button class="accordion-button" type="button" aria-expanded="true" aria-controls="faq-content-1">
+                        <button class="accordion-button" type="button" aria-expanded="true"
+                            aria-controls="faq-content-1">
                             Comment puis-je ajouter une recette?
                         </button>
                     </h3>
                     <div id="faq-content-1" class="accordion-content show">
                         <div class="accordion-body">
-                            Pour ajouter une recette, cliquez sur le bouton "Ajouter une recette" dans le menu et suivez les instructions.
+                            Pour ajouter une recette, cliquez sur le bouton "Ajouter une recette" dans le menu et suivez
+                            les instructions.
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h3 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" aria-expanded="false" aria-controls="faq-content-2">
+                        <button class="accordion-button collapsed" type="button" aria-expanded="false"
+                            aria-controls="faq-content-2">
                             Comment puis-je supprimer une recette de mes favoris?
                         </button>
                     </h3>
                     <div id="faq-content-2" class="accordion-content">
                         <div class="accordion-body">
-                            Pour supprimer une recette de vos favoris, allez sur la page "Mes favoris" et cliquez sur le bouton de suppression à côté de la recette.
+                            Pour supprimer une recette de vos favoris, allez sur la page "Mes favoris" et cliquez sur le
+                            bouton de suppression à côté de la recette.
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h3 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" aria-expanded="false" aria-controls="faq-content-3">
+                        <button class="accordion-button collapsed" type="button" aria-expanded="false"
+                            aria-controls="faq-content-3">
                             Puis-je utiliser GourmeTech sur mon mobile?
                         </button>
                     </h3>
                     <div id="faq-content-3" class="accordion-content">
                         <div class="accordion-body">
-                            Oui, GourmeTech est entièrement responsive et peut être utilisé sur tous les appareils, y compris les mobiles.
+                            Oui, GourmeTech est entièrement responsive et peut être utilisé sur tous les appareils, y
+                            compris les mobiles.
                         </div>
                     </div>
                 </div>
